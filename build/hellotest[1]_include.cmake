@@ -1,0 +1,5 @@
+if(EXISTS "/home/richter/docker_jenkins/workspace/test_jenkins/build/hellotest[1]_tests.cmake")
+  include("/home/richter/docker_jenkins/workspace/test_jenkins/build/hellotest[1]_tests.cmake")
+else()
+  add_test(hellotest_NOT_BUILT hellotest_NOT_BUILT)
+endif()
